@@ -4,7 +4,7 @@ import SuperheroCard from "./SuperheroCard";
 interface SuperheroListProps {
   superheroes: ICreateSuperhero[];
   isLoading: boolean;
-  error: any;
+  error?: { message: string } | null;
 }
 
 const SuperheroList: React.FC<SuperheroListProps> = ({

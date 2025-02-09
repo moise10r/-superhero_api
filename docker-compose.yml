@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  next-app:
+    build:
+      context: ./client
+      args:
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    container_name: next-app
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./client/.env
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    depends_on:
+      - nest-app
+    networks:
+      - app-network
+    command: npm run dev
+
+  nest-app:
+    build:
+      context: ./server
+    container_name: nest-app
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    networks:
+      - app-network
+    command: npm run start:dev
+
+networks:
+  app-network:
+    driver: bridge
