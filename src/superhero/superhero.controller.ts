@@ -11,4 +11,9 @@ export class SuperheroController {
     this.superheroService.addSuperhero(createSuperheroDto);
     return { message: 'Superhero added successfully' };
   }
+
+  @Get()
+  getSuperheroes() {
+    return this.superheroService.getSuperheroes();
+  }
 }

@@ -9,4 +9,7 @@ export class SuperheroService {
     this.superheroes.push(superhero);
   }
 
+  getSuperheroes() {
+    return this.superheroes.sort((a, b) => b.humilityScore - a.humilityScore);
+  }
 }
