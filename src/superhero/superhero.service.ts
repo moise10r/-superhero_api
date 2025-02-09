@@ -1,8 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { CreateSuperheroDto } from '../dto';
 
 @Injectable()
 export class SuperheroService {
-  getSuperheroes(): string {
-    return 'Superheroes';
+  private superheroes = [];
+
+  addSuperhero(superhero: CreateSuperheroDto) {
+    this.superheroes.push(superhero);
   }
+
 }

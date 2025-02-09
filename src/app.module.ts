@@ -5,6 +5,6 @@ import { SuperheroService } from './superhero/superhero.service';
 @Module({
   imports: [],
   controllers: [SuperheroController],
-  providers: [, SuperheroService],
+  providers: [SuperheroService],
 })
 export class AppModule {}

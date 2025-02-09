@@ -1,12 +1,14 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { SuperheroService } from './superhero.service';
+import { CreateSuperheroDto } from '../dto';
 
-@Controller('superhero')
+@Controller('superheroes')
 export class SuperheroController {
   constructor(private readonly superheroService: SuperheroService) {}
 
-  @Get('superheroes')
-  getSuperheroes(): string {
-    return this.superheroService.getSuperheroes();
+  @Post('new')
+  addSuperhero(@Body() createSuperheroDto: CreateSuperheroDto) {
+    this.superheroService.addSuperhero(createSuperheroDto);
+    return { message: 'Superhero added successfully' };
   }
 }
