@@ -6,6 +6,13 @@ Superheroes Api
 
 - Nest
 
+### Setup
+
+```bash
+git clone git@github.com:moise10r/superhero.git
+cd ./superhero/server
+```
+
 ## Installation
 
 ```bash
