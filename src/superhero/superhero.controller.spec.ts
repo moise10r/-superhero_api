@@ -1,18 +1,32 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import * as request from 'supertest';
+import { INestApplication } from '@nestjs/common';
 import { SuperheroController } from './superhero.controller';
+import { SuperheroService } from './superhero.service';
 
-describe('SuperheroController', () => {
-  let controller: SuperheroController;
+describe('SuperheroController (e2e)', () => {
+  let app: INestApplication;
+  let service: SuperheroService;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
+  beforeAll(async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
       controllers: [SuperheroController],
+      providers: [SuperheroService],
     }).compile();
 
-    controller = module.get<SuperheroController>(SuperheroController);
+    app = moduleFixture.createNestApplication();
+    await app.init();
+    service = moduleFixture.get<SuperheroService>(SuperheroService);
   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
+  it('/GET superheroes (should return empty array initially)', async () => {
+    return request(app.getHttpServer())
+      .get('/superheroes')
+      .expect(200)
+      .expect([]);
+  });
+
+  afterAll(async () => {
+    await app.close();
   });
 });
