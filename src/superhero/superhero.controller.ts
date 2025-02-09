@@ -6,7 +6,7 @@ import { CreateSuperheroDto } from '../dto';
 export class SuperheroController {
   constructor(private readonly superheroService: SuperheroService) {}
 
-  @Post('new')
+  @Post('')
   addSuperhero(@Body() createSuperheroDto: CreateSuperheroDto) {
     this.superheroService.addSuperhero(createSuperheroDto);
     return { message: 'Superhero added successfully' };
