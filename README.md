@@ -17,10 +17,11 @@ The **client** folder contains the front-end code for the application. It is res
 
 ## Server
 
-The **server** folder contains the back-end code for the application. It is responsible for handling business logic, managing the database, and serving API endpoints to the client.
+The **server** folder contains the back-end code for the application. It is responsible for handling business logic and serving API endpoints to the client.
 
 - [**Server README**](./server/README.md): Find more details about how to set up and run the server application.
 
+NOTE: Please Run the backend before the client 
 
 ## Authors
 
