@@ -21,7 +21,7 @@ The **server** folder contains the back-end code for the application. It is resp
 
 - [**Server README**](./server/README.md): Find more details about how to set up and run the server application.
 
-### To Run the entire project using docker you can run
+### To Run the entire project using docker, please run
 
 ```bash
 docker compose up --build
