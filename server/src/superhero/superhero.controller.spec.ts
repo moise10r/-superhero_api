@@ -3,7 +3,7 @@ import * as request from 'supertest';
 import { INestApplication } from '@nestjs/common';
 import { SuperheroController } from './superhero.controller';
 import { SuperheroService } from './superhero.service';
-import { CreateSuperheroDto } from '../dto';
+import { CreateSuperheroDto } from './dto';
 
 describe('SuperheroController (e2e)', () => {
   let app: INestApplication;

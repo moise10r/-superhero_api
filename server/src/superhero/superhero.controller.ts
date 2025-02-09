@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { SuperheroService } from './superhero.service';
-import { CreateSuperheroDto } from '../dto';
+import { CreateSuperheroDto } from './dto';
 
 @Controller('superheroes')
 export class SuperheroController {

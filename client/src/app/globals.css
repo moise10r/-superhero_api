@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer base {
+  body {
+    @apply bg-superhero-black text-white font-sans;
+  }
+}

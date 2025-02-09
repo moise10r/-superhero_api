@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "superhero-black": "#000000", // Black color for the theme
+        "superhero-yellow": "#FFD700", // Gold color for accents
       },
     },
   },
