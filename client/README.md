@@ -1,62 +1,39 @@
-## Description
-
-Superheroes Api
-
-## Built With
-
-- Nest
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/153421d7-0edc-475d-b05c-5396847a9d8f" />
 
 ### Setup
 
 ```bash
 git clone git@github.com:moise10r/superhero.git
-cd ./superhero/server
+cd ./superhero/client
 ```
 
-## Installation
+## Getting Started
+
+First, run the development server:
 
 ```bash
-$ pnpm install
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
 ```
 
-## Running the app
+To run locally
 
 ```bash
-# development
-$ pnpm run start
-
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Running the app in the docker container
-
-```bash
-# Run
-$ docker build -t superhero .
-
-# And then
-$ docker run -p 3000:3000 superhero
-
-```
-
-You can open it from the PORT : 3000
-
-## Test
-
-```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
+Run first the server before running the client.
 
 ## Authors
 

@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { CreateSuperheroDto } from '../dto';
+import { CreateSuperheroDto } from './dto';
 
 @Injectable()
 export class SuperheroService {

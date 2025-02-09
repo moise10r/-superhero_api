@@ -1,4 +1,4 @@
-import { CreateSuperheroDto } from '../dto';
+import { CreateSuperheroDto } from './dto';
 import { SuperheroService } from './superhero.service';
 import { BadRequestException } from '@nestjs/common';
 

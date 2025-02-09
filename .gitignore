@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # compiled output
 server/dist
 server/node_modules
@@ -52,4 +53,106 @@ server/*.seed
 server/*.pid.lock
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
+<<<<<<< Updated upstream
 server/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+=======
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+=======
+# ===== Server build output =====
+server/dist
+server/node_modules
+server/build
+
+# ===== Logs =====
+server/logs
+server/*.log
+server/npm-debug.log*
+server/pnpm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/lerna-debug.log*
+
+# ===== OS Files =====
+server/.DS_Store
+
+# ===== Tests =====
+server/coverage
+server/.nyc_output
+
+# ===== IDEs and Editors =====
+server/.idea
+server/.project
+server/.classpath
+server/.c9/
+server/*.launch
+server/.settings/
+server/*.sublime-workspace
+
+# ===== IDE - VSCode =====
+server/.vscode/*
+!server/.vscode/settings.json
+!server/.vscode/tasks.json
+!server/.vscode/launch.json
+!server/.vscode/extensions.json
+
+# ===== dotenv environment variable files =====
+server/.env
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+server/.env.local
+
+# ===== Temp directories =====
+server/.temp
+server/.tmp
+
+# ===== Runtime data =====
+server/pids
+server/*.pid
+server/*.seed
+server/*.pid.lock
+
+# ===== Diagnostic reports =====
+server/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# ===== Client build output =====
+client/node_modules
+client/.pnp
+client.pnp.*
+client.yarn/*
+!client.yarn/patches
+!client.yarn/plugins
+!client.yarn/releases
+!client.yarn/versions
+
+# ===== Testing =====
+client/coverage
+
+# ===== Next.js build output =====
+client/.next/
+client/out/
+
+# ===== Production build =====
+client/build
+
+# ===== Miscellaneous =====
+client/.DS_Store
+client*.pem
+
+# ===== Debug logs =====
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+client.pnpm-debug.log*
+
+# ===== Environment variable files (can opt-in for committing if needed) =====
+client/.env*
+
+# ===== Vercel deployment files =====
+client/.vercel
+
+# ===== TypeScript build info =====
+client/*.tsbuildinfo
+client/next-env.d.ts
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
