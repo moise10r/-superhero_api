@@ -1,0 +1,44 @@
+# Node modules
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# .next build output
+.next
+
+# Test files
+*.test.js
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.tsx
+
+# Build files (for static apps or serverless deployment)
+out
+
+# Environment variables files
+.env
+.env.local
+.env.*.local
+
+# OS or IDE-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+logs
+*.log
+
+# Coverage output
+coverage/
+
+# Temporary files
+*.swp
+*.swo
+
+# Docker files (to avoid including Dockerfile itself in the container)
+Dockerfile
+.dockerignore
