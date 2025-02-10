@@ -27,6 +27,10 @@ The **server** folder contains the back-end code for the application. It is resp
 docker compose up --build
 ```
 
+### If I had more time
+
+- I could persist the superheroes into a database.
+
 ## Authors
 
 👤 NGANULO RUSHANIKA Moise
